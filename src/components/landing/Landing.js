@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, Fragment } from 'react';
 
 const Landing = () => {
   // Gestion des griffes de l'image
@@ -37,7 +37,7 @@ const Landing = () => {
 
   // Display btn
   const displayBtn = btn && (
-    <>
+    <Fragment>
       <div className="leftBox">
         <button 
           onMouseOver={setLeftImage}
@@ -56,7 +56,7 @@ const Landing = () => {
           Se connecter
         </button>
       </div>
-    </>
+    </Fragment>
   )
 
   return (
